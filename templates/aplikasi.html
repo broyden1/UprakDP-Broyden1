@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IPM Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+  <div class="navbar-left">
+    <span class="navbar-text">IPM Classifier</span>
+  </div>
+  <div class="navbar-right">
+    <ul>
+      <li><a href="/" >Home</a></li>
+      <li><a href="#" class="active">Aplication</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </div>
+</div>
+	<!--isi content-->
+    <div class="container">
+        <div class="left-container">
+            <h1>IPM Predictor</h1>
+            <form action="{{ url_for('predict') }}" method="POST">
+                <label for="Harapan_Lama_Sekolah">Harapan Lama Sekolah:</label>
+                <input type="text" name="Harapan_Lama_Sekolah" id="Harapan_Lama_Sekolah" required><br><br>
+                
+                <label for="Pengeluaran_Perkapita">Pengeluaran Perkapita:</label>
+                <input type="text" name="Pengeluaran_Perkapita" id="Pengeluaran_Perkapita" required><br><br>
+                
+                <label for="Rerata_Lama_Sekolah">Rerata Lama Sekolah:</label>
+                <input type="text" name="Rerata_Lama_Sekolah" id="Rerata_Lama_Sekolah" required><br><br>
+                
+                <label for="Usia_Harapan_Hidup">Usia Harapan Hidup:</label>
+                <input type="text" name="Usia_Harapan_Hidup" id="Usia_Harapan_Hidup" required><br><br>
+
+                <input type="submit" value="Predict">
+            </form>
+        </div>
+        <div class="right-container">
+          <h1>Hasil Prediksi</h1>
+            <div class="prediction-result">
+                {% if prediction_text %}
+		                <p>{{ prediction_text }}</p>
+	              {% endif %}
+                <img src="{{ img_url }}" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <!--footer-->
+<footer class="footer">
+    <div class="footer-left">
+      <figure>
+        <!--<img src="static/images/logo.png" alt="gambar footer">-->
+        <p>
+      &copy; 2023 Broyden1. All rights reserved.
+    </p>
+        <!--<p><a href="https://www.example.com">broyden1@gmail.com</a></p>-->
+      </figure> 
+    </div>
+    <div class="footer-right">
+      <figure>
+        <p >Support By:</p>
+        <a href="https://orbitfutureacademy.id/"><img src="static/images/orbit.png" alt="gambar1"></a>
+          <a href="https://ittelkom-pwt.ac.id/"><img src="static/images/fayza.png" alt="gambar2"></a>
+          <a href="https://www.amikompurwokerto.ac.id/"><img src="static/images/aji.png" alt="gambar3"></a>
+          <a href="https://www.ukdw.ac.id/"><img src="static/images/ardi.png" alt="gambar4"></a>
+          <a href="https://unmaha.ac.id/"><img src="static/images/kinanti.png" alt="gambar5"></a>
+      </figure>   
+    </div>
+    <!--<p class="footer-copyright">-->
+    <!--  &copy; 2023 Broyden1. All rights reserved.-->
+    <!--</p>-->
+  </footer>
+    <script src="{{ url_for('static', filename='js/predik.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IPM Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+  <div class="navbar-left">
+    <span class="navbar-text">IPM Classifier</span>
+  </div>
+  <div class="navbar-right">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="/aplikasi">Aplication</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </div>
+</div>
+
+	<!--isi content-->
+    <div class="content">
+        <div class="left">
+            <h2>Classifier Indeks Pembangunan Manusia</h2>
+            <p>Indeks Pembangunan Classifier (IPC) adalah sebuah website yang dibuat <br> menggunakan teknik stacking pada algoritma machine learning untuk <br> mengklasifikasikan kemampuan pembangunan suatu daerah atau wilayah.</p>
+            <button href="/aplikasi" class="button">Start</button>
+        </div>
+        <div class="right">
+            <img src="static/images/header.png" alt="gambar">
+        </div>
+    </div>
+    
+    <!--footer-->
+<footer class="footer">
+    <div class="footer-left">
+      <figure>
+        <!--<img src="static/images/logo.png" alt="gambar footer">-->
+        <p>
+      &copy; 2023 Broyden1. All rights reserved.
+    </p>
+        <!--<p><a href="https://www.example.com">broyden1@gmail.com</a></p>-->
+      </figure> 
+    </div>
+    <div class="footer-right">
+      <figure>
+        <p >Support By:</p>
+        <a href="https://orbitfutureacademy.id/"><img src="static/images/orbit.png" alt="gambar1"></a>
+          <a href="https://ittelkom-pwt.ac.id/"><img src="static/images/fayza.png" alt="gambar2"></a>
+          <a href="https://www.amikompurwokerto.ac.id/"><img src="static/images/aji.png" alt="gambar3"></a>
+          <a href="https://www.ukdw.ac.id/"><img src="static/images/ardi.png" alt="gambar4"></a>
+          <a href="https://unmaha.ac.id/"><img src="static/images/kinanti.png" alt="gambar5"></a>
+      </figure>   
+    </div>
+    <!--<p class="footer-copyright">-->
+    <!--  &copy; 2023 Broyden1. All rights reserved.-->
+    <!--</p>-->
+  </footer>
+    <script src="{{ url_for('static', filename='js/predik.js') }}"></script>
+</body>
+</html>

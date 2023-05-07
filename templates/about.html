@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IPM Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+  <div class="navbar-left">
+    <span class="navbar-text">IPM Classifier</span>
+  </div>
+  <div class="navbar-right">
+    <ul>
+      <li><a href="/" >Home</a></li>
+      <li><a href="/aplikasi">Aplication</a></li>
+      <li><a href="#" class="active">About</a></li>
+    </ul>
+  </div>
+</div>
+	<!--isi content-->
+	<div class="txt-about">
+        <h1 class="fonts" style="font-weight: bold">Our Teams</h1>
+      </div>
+    <div class="profiles">
+        <div class="profile">
+          <a href=""><img src="static/images/fayza1.png" alt="Profile 1"></a>
+          <div class="profile-text">
+            <h3>Fayza Apriliza</h3>
+            <p>Sistem Informasi</p>
+            <p>Institut Teknologi Telkom Purwokerto</p>
+          </div>
+        </div>
+        <div class="profile">
+          <a href="https://www.linkedin.com/in/aji-saeful-a2278b269/"><img src="static/images/aji1.png" alt="Profile 2"></a>
+          <div class="profile-text">
+            <h3>Aji Saeful</h3>
+            <p>Informatika</p>
+            <p>Universitas Amikom Purwokerto</p>
+          </div>
+        </div>
+        <div class="profile">
+          <a href=""><img src="static/images/ardi1.png" alt="Profile 3"></a>
+          <div class="profile-text">
+            <h3>Adelatus Ardias</h3>
+            <p>Informatika</p>
+            <p>Universitas Kristen Duta Wacana</p>
+          </div>
+        </div>
+        <div class="profile">
+          <a href=""><img src="static/images/aji1.png" alt="Profile 4"></a>
+          <div class="profile-text">
+            <h3>Kinanti Meichika</h3>
+            <p>Manajemen perbankan</p>
+            <p>Universitas mahakarya Asia Yogyakarta</p>
+          </div>
+        </div>
+      </div>
+    
+    <!--footer-->
+<footer class="footer">
+    <div class="footer-left">
+      <figure>
+        <!--<img src="static/images/logo.png" alt="gambar footer">-->
+        <p>
+      &copy; 2023 Broyden1. All rights reserved.
+    </p>
+        <!--<p><a href="https://www.example.com">broyden1@gmail.com</a></p>-->
+      </figure> 
+    </div>
+    <div class="footer-right">
+      <figure>
+        <p >Support By:</p>
+        <a href="https://orbitfutureacademy.id/"><img src="static/images/orbit.png" alt="gambar1"></a>
+          <a href="https://ittelkom-pwt.ac.id/"><img src="static/images/fayza.png" alt="gambar2"></a>
+          <a href="https://www.amikompurwokerto.ac.id/"><img src="static/images/aji.png" alt="gambar3"></a>
+          <a href="https://www.ukdw.ac.id/"><img src="static/images/ardi.png" alt="gambar4"></a>
+          <a href="https://unmaha.ac.id/"><img src="static/images/kinanti.png" alt="gambar5"></a>
+      </figure>   
+    </div>
+    <!--<p class="footer-copyright">-->
+    <!--  &copy; 2023 Broyden1. All rights reserved.-->
+    <!--</p>-->
+  </footer>
+    <script src="{{ url_for('static', filename='js/predik.js') }}"></script>
+</body>
+</html>
