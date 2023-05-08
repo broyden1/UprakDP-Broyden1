@@ -6,7 +6,7 @@
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
-  background-color: blue;
+  background-color: #DBAEA4;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -99,7 +99,7 @@ body {
 
   
   input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #8D4A37;
     color: white;
     padding: 10px;
     border: none;
@@ -139,6 +139,10 @@ background-color: #3e8e41;
         margin-left: 20px; /* Tambahkan margin-left untuk menggeser ke kanan */
     }
 
+.left-container h1{
+    color: #8D4A37;
+}
+
 .right-container {
         width: 500px;
         height:30px;
@@ -147,6 +151,9 @@ background-color: #3e8e41;
         margin-top:150px;
         margin-left:100px;
     }
+.right-container h1{
+    color: #8D4A37;
+}
 .prediction-result{
   margin-left:130px;
 }
@@ -160,7 +167,7 @@ background-color: #3e8e41;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #5E421B;
+    background-color: #1C212E;
     padding: 10px;
     margin-top: 20px;
   }
@@ -230,6 +237,9 @@ background-color: #3e8e41;
     margin-left:50px;
     padding-top:30px;
 }
+.content h2{
+    color:#8D4A37;
+}
 
 .left {
     text-align: left;
@@ -246,7 +256,7 @@ img {
 }
 
 .button {
-    background-color: blue;
+    background-color: #8D4A37;
     color: white;
     font-weight: bold;
     border: none;
@@ -300,7 +310,7 @@ img {
   }
   
   .txt-about {
-    color: #AD3113;
+    color: #8D4A37;
     text-align: center;
     padding-top: 50px;
   }
