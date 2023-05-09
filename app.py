@@ -28,11 +28,11 @@ def predict():
 
     output = round(prediction[0], 2)
 
-    if output >= 0.8:
+    if output == 3:
         category = "Selamat, IPM berstatus very-high"
-    elif output >= 0.7:
+    elif output == 2:
         category = "Selamat, IPM berstatus high"
-    elif output >= 0.6:
+    elif output == 1:
         category = "Selamat dan tingkatkan, IPM berstatus normal"
     else:
         category = "Yah, status IPM low"
